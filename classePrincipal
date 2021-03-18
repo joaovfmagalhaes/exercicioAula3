@@ -1,0 +1,28 @@
+package exercicioAula3;
+
+import java.util.Scanner;
+
+public class classePrincipal {
+
+	public static void main(String[] args) {
+		
+		String plano;
+		
+		Scanner sc = new Scanner(System.in);
+		plano = sc.next().toUpperCase();
+		
+		switch (plano) {
+		  case "BASIC":
+		    System.out.println("200 min em ligações");
+		    break;
+		  case "PREMIUM":
+		    System.out.println("200 min em ligacoes mais 3 gigas internet");
+		    break;
+		  case "GOLD":
+			System.out.println("200 min em ligacoes mais 3 gigas internet e facebook ilimitado");
+			break;
+		  default:
+		    System.out.println("Plano Inexistente");
+		}
+		sc.close();
+	}
